@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "asr-summary-llm"
+version = "0.1.0"
+description = ""
+authors = ["Marc Fabian Mezger"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "asr_summary_llm"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai-whisper = "^20230314"
+pyannote-audio = "^2.1.1"
+gpt4all = "^1.0.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
