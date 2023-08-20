@@ -10,8 +10,10 @@ packages = [{include = "asr_summary_llm"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 openai-whisper = "^20230314"
-pyannote-audio = "^2.1.1"
+pyannote-audio = {git = "https://github.com/pyannote/pyannote-audio.git", branch = "develop"}
 gpt4all = "^1.0.8"
+torch = "2.0.0"
+pydub = "^0.25.1"
 
 
 [build-system]
