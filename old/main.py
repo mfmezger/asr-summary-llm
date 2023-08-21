@@ -1,10 +1,13 @@
-import whisper
+"""MAIN."""
 import torch
 from pyannote.audio import Pipeline
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
+
+
 def main():
+    """Main."""
     pipeline = Pipeline.from_pretrained(
         "pyannote/speaker-diarization@2.1",
         use_auth_token="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",

@@ -10,12 +10,19 @@ packages = [{include = "asr_summary_llm"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 openai-whisper = "^20230314"
+whisper-timestamped = {git = "https://github.com/linto-ai/whisper-timestamped.git", branch = "master"}
 pyannote-audio = {git = "https://github.com/pyannote/pyannote-audio.git", branch = "develop"}
 gpt4all = "^1.0.8"
 torch = "2.0.0"
 pydub = "^0.25.1"
+fastapi = "^0.101.1"
+loguru = "^0.7.0"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[settings]
+known_third_party = ["dotenv", "fastapi", "loguru", "pyannote", "pydub", "torch", "whisper_timestamped"]
